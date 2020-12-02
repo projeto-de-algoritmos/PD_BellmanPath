@@ -123,16 +123,16 @@ const launchBootsrapModal = (message: string) => {
 
 const visualize = async (withAnimation = true) => {
 	if (algorithm === "") {
-		console.log("Você não escolheu nenhum algoritmo!")
-		launchBootsrapModal("Você não escolheu nenhum algoritmo!")
+		console.log("you did not choose any algorithme")
+		launchBootsrapModal("you did not choose any algorithm!")
 	} else if (!isStartNodeSelected || !isEndNodeSelected) {
-		console.log("Você não escolheu os pontos de partida/chegada")
+		console.log("youd did not choose start/end nodes")
 		if (!isStartNodeSelected && !isEndNodeSelected) {
-			launchBootsrapModal("Você não escolheu os pontos de partida/chegada!")
+			launchBootsrapModal("you did not select start and end nodes! both!")
 		} else if (!isStartNodeSelected) {
-			launchBootsrapModal("Você não escolheu o ponto de partida!")
+			launchBootsrapModal("you did not select the start node")
 		} else {
-			launchBootsrapModal("Você não escolheu o ponto de chegada!")
+			launchBootsrapModal("you did not select the end node")
 		}
 	} else {
 		console.log("before")
@@ -159,11 +159,11 @@ const visualize = async (withAnimation = true) => {
 			path = await dfsSearch(startNodeCoords, endNodeCoords, graph, withAnimation)
 		}
 
-		console.log("depois")
+		console.log("after")
 
 		if (path.length === 0) {
-			console.log("Não pode ir para esse destino, nenhum")
-			alert("Não pode ir para esse destino, nenhum");
+			console.log("cannot go to destination, no path")
+			alert("cannot go to dest, no path")
 		} else {
 			const sleepTime = withAnimation ? 50 : 0
 			for (let coords of path) {

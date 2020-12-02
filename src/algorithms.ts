@@ -62,11 +62,11 @@ export const bfsSearch = async (src: Coords, dest: Coords, graph: Graph, withAni
 	console.log("debug>> bfs")
 
 	if (!Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
-		throw new Error("Cordenadas não estão no grid")
+		throw new Error("source coordinates are not in the grid")
 	}
 
 	if (!Coords.isCoordsInGrid(dest, graph.numberOfRows, graph.numberOfColumns)) {
-		throw new Error("Cordenadas de destino não estão no grid")
+		throw new Error("destination coordinates are not in the grid")
 	}
 
 	const queue: Node[] = []
@@ -113,11 +113,11 @@ export const dijkstartSearch = async (src: Coords, dest: Coords, graph: Graph, w
 	console.log(">>Debug: dikstrta")
 
 	if (!Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
-		throw new Error("Cordenadas de destino não estão no grid")
+		throw new Error("source coordinates are not in the grid")
 	}
 
 	if (!Coords.isCoordsInGrid(dest, graph.numberOfRows, graph.numberOfColumns)) {
-		throw new Error("Cordenadas de destino não estão no grid")
+		throw new Error("destination coordinates are not in the grid")
 	}
 
 	let isPathExists = false
@@ -192,11 +192,11 @@ export const bellmanFordSearch = async (src: Coords, dest: Coords, graph: Graph,
 	console.log(">>debug: bellman ford")
 
 	if (!Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
-		throw new Error("Cordenadas de destino não estão no grid")
+		throw new Error("source coordinates are not in the grid")
 	}
 
 	if (!Coords.isCoordsInGrid(dest, graph.numberOfRows, graph.numberOfColumns)) {
-		throw new Error("Cordenadas de destino não estão no grid")
+		throw new Error("destination coordinates are not in the grid")
 	}
 
 	const startNode = graph.nodes[src.i][src.j]
