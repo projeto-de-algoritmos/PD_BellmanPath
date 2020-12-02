@@ -1,4 +1,4 @@
-(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Impossível encontrar o modulo '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
     "use strict";
     var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
         function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -50,7 +50,6 @@
         return path;
     });
     exports.bfsSearch = (src, dest, graph, withAnimation = true) => __awaiter(void 0, void 0, void 0, function* () {
-        console.log("debug>> bfs");
         if (!utils_1.Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
             throw new Error("source coordinates are not in the grid");
         }
@@ -91,7 +90,6 @@
         return path;
     });
     exports.dijkstartSearch = (src, dest, graph, withAnimation = true) => __awaiter(void 0, void 0, void 0, function* () {
-        console.log(">>Debug: dikstrta");
         if (!utils_1.Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
             throw new Error("source coordinates are not in the grid");
         }
@@ -158,7 +156,6 @@
         return path;
     });
     exports.bellmanFordSearch = (src, dest, graph, withAnimation = true) => __awaiter(void 0, void 0, void 0, function* () {
-        console.log(">>debug: bellman ford");
         if (!utils_1.Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
             throw new Error("source coordinates are not in the grid");
         }
@@ -212,7 +209,7 @@
     });
     
     },{"./utils":3}],2:[function(require,module,exports){
-    (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+    (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Impossível encontrar o modulo '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
     "use strict";
     var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
         function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -264,7 +261,6 @@
         return path;
     });
     exports.bfsSearch = (src, dest, graph, withAnimation = true) => __awaiter(void 0, void 0, void 0, function* () {
-        console.log("debug>> bfs");
         if (!utils_1.Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
             throw new Error("source coordinates are not in the grid");
         }
@@ -305,7 +301,6 @@
         return path;
     });
     exports.dijkstartSearch = (src, dest, graph, withAnimation = true) => __awaiter(void 0, void 0, void 0, function* () {
-        console.log(">>Debug: dikstrta");
         if (!utils_1.Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
             throw new Error("source coordinates are not in the grid");
         }
@@ -372,7 +367,6 @@
         return path;
     });
     exports.bellmanFordSearch = (src, dest, graph, withAnimation = true) => __awaiter(void 0, void 0, void 0, function* () {
-        console.log(">>debug: bellman ford");
         if (!utils_1.Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
             throw new Error("source coordinates are not in the grid");
         }
@@ -522,11 +516,9 @@
     };
     const visualize = (withAnimation = true) => __awaiter(void 0, void 0, void 0, function* () {
         if (algorithm === "") {
-            console.log("you did not choose any algorithme");
             launchBootsrapModal("you did not choose any algorithm!");
         }
         else if (!isStartNodeSelected || !isEndNodeSelected) {
-            console.log("youd did not choose start/end nodes");
             if (!isStartNodeSelected && !isEndNodeSelected) {
                 launchBootsrapModal("you did not select start and end nodes! both!");
             }
@@ -538,7 +530,6 @@
             }
         }
         else {
-            console.log("before");
             if (!firstTimeVisualization) {
                 for (let i = 0; i < graph.numberOfRows; i++) {
                     for (let j = 0; j < graph.numberOfColumns; j++) {
@@ -563,10 +554,8 @@
             else if (algorithm === "dfs") {
                 path = yield algorithms_1.dfsSearch(startNodeCoords, endNodeCoords, graph, withAnimation);
             }
-            console.log("after");
             if (path.length === 0) {
-                console.log("cannot go to destination, no path");
-                alert("cannot go to dest, no path");
+                alert("Caminho ainda não encontrado");
             }
             else {
                 const sleepTime = withAnimation ? 50 : 0;
@@ -576,7 +565,6 @@
                     yield utils_1.sleep(sleepTime);
                 }
             }
-            console.log("> path", path);
             firstTimeVisualization = false;
             graph.initGraph();
             graph.blockedNodesCoords.forEach((coords) => (graph.nodes[coords.i][coords.j].isBlocked = true));
@@ -711,13 +699,11 @@
             }
         }
         else {
-            console.log("rak mamselectioni walo");
         }
     });
     table.addEventListener("mouseover", (e) => {
         const target = e.target;
         if (selectingBlocked) {
-            console.log(target.tagName);
             if (target.tagName !== "IMG" &&
                 target.tagName !== "TABLE" &&
                 (!isStartNodeSelected || (isStartNodeSelected && !utils_1.Coords.areEquals(utils_1.Coords.getCoordsFromStr(target.id), startNodeCoords))) &&
