@@ -59,7 +59,6 @@ export const dfsSearch = async (src: Coords, dest: Coords, graph: Graph, withAni
 }
 
 export const bfsSearch = async (src: Coords, dest: Coords, graph: Graph, withAnimation = true): Promise<Coords[]> => {
-	console.log("debug>> bfs")
 
 	if (!Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
 		throw new Error("source coordinates are not in the grid")
@@ -110,7 +109,6 @@ export const bfsSearch = async (src: Coords, dest: Coords, graph: Graph, withAni
 }
 
 export const dijkstartSearch = async (src: Coords, dest: Coords, graph: Graph, withAnimation = true): Promise<Coords[]> => {
-	console.log(">>Debug: dikstrta")
 
 	if (!Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
 		throw new Error("source coordinates are not in the grid")
@@ -189,7 +187,6 @@ export const dijkstartSearch = async (src: Coords, dest: Coords, graph: Graph, w
 }
 
 export const bellmanFordSearch = async (src: Coords, dest: Coords, graph: Graph, withAnimation = true): Promise<Coords[]> => {
-	console.log(">>debug: bellman ford")
 
 	if (!Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
 		throw new Error("source coordinates are not in the grid")

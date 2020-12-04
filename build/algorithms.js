@@ -49,7 +49,6 @@ exports.dfsSearch = (src, dest, graph, withAnimation = true) => __awaiter(void 0
     return path;
 });
 exports.bfsSearch = (src, dest, graph, withAnimation = true) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log("debug>> bfs");
     if (!utils_1.Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
         throw new Error("source coordinates are not in the grid");
     }
@@ -90,7 +89,6 @@ exports.bfsSearch = (src, dest, graph, withAnimation = true) => __awaiter(void 0
     return path;
 });
 exports.dijkstartSearch = (src, dest, graph, withAnimation = true) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log(">>Debug: dikstrta");
     if (!utils_1.Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
         throw new Error("source coordinates are not in the grid");
     }
@@ -157,7 +155,6 @@ exports.dijkstartSearch = (src, dest, graph, withAnimation = true) => __awaiter(
     return path;
 });
 exports.bellmanFordSearch = (src, dest, graph, withAnimation = true) => __awaiter(void 0, void 0, void 0, function* () {
-    console.log(">>debug: bellman ford");
     if (!utils_1.Coords.isCoordsInGrid(src, graph.numberOfRows, graph.numberOfColumns)) {
         throw new Error("source coordinates are not in the grid");
     }
