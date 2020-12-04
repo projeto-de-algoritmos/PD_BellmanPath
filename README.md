@@ -21,15 +21,15 @@ O projeto tem como objetivo demonstrar a visualização de algoritmos e como ele
 
 ### Ponto de partida e fim definidos
 
-![01](./docs/01.png)
+![01](./docs/1.png)
 
 ### Apenas o caminho
 
-![02](./docs/02.png)
+![02](./docs/2.png)
 
 ### Algoritmos trabalhando
 
-![03](./docs/03.png)
+![03](./docs/3.png)
 
 
 ## Instalação 
