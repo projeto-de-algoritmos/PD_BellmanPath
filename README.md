@@ -1,45 +1,42 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# Bellman Path
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 5<br>
+**Conteúdo da Disciplina**: Programação Dinâmica<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 17/0062686 |  Pedro Rodrigues Pereira |
+| 17/0008371 |  Daniel de Sousa Oliveira Melo Veras |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+O projeto tem como objetivo demonstrar a visualização de algoritmos e como eles definem um caminho entre o ponto de partida e o ponto de chegada. O projeto conta com quatro algoritmos diferentes para atingir o destino, sendo eles:
+
+* Bellmman
+* dijkstra
+* Depth First Search
+* Breath First Search
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+### Ponto de partida e fim definidos
+
+![01](./docs/01.png)
+
+### Apenas o caminho
+
+![02](./docs/02.png)
+
+### Algoritmos trabalhando
+
+![03](./docs/03.png)
+
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Typescript e HTML<br>
+<br>
+O projeto não demanda instalação. Basta abrir o arquivo **index.html**, presente na raiz no projeto.
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
-
+Após abrir o arquivo **index.html** presente na raiz do projeto, se faz necessário selecionar o algoritmo, selecionar um ponto de partida e um ponto de destino. A partir desse ponto é possível optar entre visualizar apenas o caminho ou todo processo do algoritmo.
